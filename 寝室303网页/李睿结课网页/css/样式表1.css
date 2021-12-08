@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+/* 弹性盒子使demo居中 */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* 最外层的作用是让中间的.bgc溢出部分隐藏 
+大小根据内容区域与边框大小自由调整 */
+.wrap {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+	/* 弹性盒子使content区域居中显示 */
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+/* 最终动态渐变边框实际内容 比.wrap大 但是因为溢出部分被隐藏 
+而中间部分又因为层级关系被.content盖住 
+最后只有.wrap和.content之间的缝隙显示这个旋转的渐变色盒子 */
+.bgc {
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(#fff,#448de0);
+	animation: bgc 1.5s infinite linear;
+	border-radius: 50%;
+	position: absolute; 
+	z-index: -1;
+}
+/* 内容区域 根据自身情况调整大小 */
+.content {
+	width: 290px;
+	height: 290px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+/* 渐变色盒子旋转动画 */
+@keyframes bgc {
+	0% {
+		transform: rotateZ(0);
+	}
+
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+

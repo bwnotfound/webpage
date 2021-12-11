@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.start{
+	margin: 1%;
+	background-color: white;
+	height: 96%;
+	width: 98%;
+	position: fixed;
+	overflow:scroll;
+	overflow-x: hidden;
+}
+.zi{
+	font-family: consolas;
+	color: black;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+.zi2:visited,.zi2:link{
+	font-family: Consolas;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	text-decoration: none;
+	color: #333333;
+	font-weight: 100;
+}
+.zi2:hover,.zi2:active{
+	font-family: Consolas;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 900;
+}
+.botton1{
+	text-decoration: none;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50%;
+	padding: 10px;
+	position: fixed;
+	margin-left: 600px;
+	margin-top: 600px;
+	transition:  all 0.5s;
+	color: black;
+	background-color: white;
+}
+.botton1:hover{
+	transition: all 0.5px;
+	background-color: #555555;
+	color:#ffffff;
+}
+.botton{
+	font-family: consolas;
+	text-decoration: none;
+	border-style: solid;
+	border-radius: 18px;
+	border-width: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	transition: all 0.5s;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.botton:hover{
+	transition: all 0.5px;
+	background-color: #555555;
+	color:#ffffff;
+}
